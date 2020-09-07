@@ -40,7 +40,7 @@ function QRGenerator () {
   return (
     <div>
       <h1>WiFi QR Generator</h1>
-      <p>Submit the following information to generate a QR code which will allow your ADD Video device to connect to a WiFi connection:</p>
+      <p>Submit the following information to generate a QR code which will allow your ADD Video device to connect to a WiFi access point:</p>
       <Field>
         <label htmlFor='device-code'>ADD Video Device Code</label>
         <input type='text' id='device-code' name='device code' value={deviceCode} onChange={(e) => setDeviceCode(e.target.value)} />
