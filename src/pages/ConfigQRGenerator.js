@@ -15,7 +15,7 @@ const Field = styled.div`
   }
 `;
 
-function QRGenerator () {
+function ConfigQRGenerator () {
   const [deviceCode, setDeviceCode] = useState('');
   const [ssid, setSsid] = useState('');
   const [wifiPass, setWifiPass] = useState('');
@@ -44,8 +44,8 @@ function QRGenerator () {
 
   return (
     <div>
-      <h1>WiFi QR Generator</h1>
-      <p>Submit the following information to generate a QR code which will allow your ADD Video device to connect to a WiFi access point:</p>
+      <h1>Config Update QR Generator</h1>
+      <p>Submit the following information to update configuration values on your ADD Video system:</p>
       <Field>
         <label htmlFor='device-code'>ADD Video Device Code</label>
         <input type='text' id='device-code' name='device code' value={deviceCode} onChange={(e) => setDeviceCode(e.target.value)} />
@@ -72,4 +72,4 @@ function QRGenerator () {
   );
 }
 
-export default QRGenerator;
+export default ConfigQRGenerator;

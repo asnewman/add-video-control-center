@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import QRGenerator from './pages/QRGenerator';
+import ConfigQRGenerator from './pages/ConfigQRGenerator';
+import EntryQRGenerator from './pages/EntryQRGenerator';
 
 const AppDiv = styled.div``;
 
@@ -23,7 +24,8 @@ function App () {
     <AppDiv>
       <Header>ADD Video Control Center</Header>
       <Content>
-        <QRGenerator />
+        <ConfigQRGenerator />
+        <EntryQRGenerator />
       </Content>
     </AppDiv>
   );
